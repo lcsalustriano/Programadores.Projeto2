@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    
+    background-image: url(../imagem/img_home2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*.........Menu........Menu...............*/
+
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 40px;
+    box-shadow: 0 0.1rem 0.5rem hsl(283, 38%, 80%);
+    width: 100%;
+    background: rgb(89,6,96);
+    transition: all 0.5s;
+    position: fixed;
+}
+
+.logo {
+    color: white;
+    font-size: 1.7rem;
+    font-weight: 600;
+
+}
+
+.navigation ul {
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+}
+
+.nav-menu a {
+    color: white;
+    font-size: 17px;
+    font-weight: 500;
+    transition: all 0.5s;
+}
+
+.nav-menu :hover {
+    color: rgb(143, 19, 143);
+}
+/*................Nossa equipe.............*/
+
+body2 {
+
+    background-color: white;
+    
+  }
+   
+  .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card {
+    border-radius: 5px;
+    box-shadow: 7px 7px 13px 0px rgba(50, 50, 50, 0.22);
+    padding: 50px;
+    margin: 50px;
+    margin-top: 200px;
+    width: 400px;
+    transition: all 0.3s ease-out;
+  }
+
+  .card:hover {
+    transform: translateY(-5px);
+    cursor: pointer;
+  }
+   
+  .card p {
+    color: purple;
+    font-size: 16px;
+    font-weight: 1000;
+  }
+   
+  .image {
+    float: right;
+    max-width: 100px;
+    max-height: 100px;
+  }
+
+  .blue {
+    border-left: 3px solid #4895ff;
+  }
+   
+  .green {
+    border-left: 3px solid #3bb54a;
+  }
+   
+  .red {
+    border-left: 3px solid #b3404a;
+  }
