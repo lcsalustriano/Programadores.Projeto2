@@ -71,8 +71,8 @@ body2 {
     border-radius: 5px;
     box-shadow: 7px 7px 13px 0px rgba(50, 50, 50, 0.22);
     padding: 50px;
-    margin: 50px;
-    margin-top: 200px;
+    margin: 30px;
+    margin-top: 150px;
     width: 400px;
     transition: all 0.3s ease-out;
   }
@@ -83,7 +83,7 @@ body2 {
   }
    
   .card p {
-    color: purple;
+    color: rgb(247, 245, 247);
     font-size: 16px;
     font-weight: 1000;
   }
@@ -104,4 +104,10 @@ body2 {
    
   .red {
     border-left: 3px solid #b3404a;
+  }
+
+  .yellow {
+
+    border-left: 3px solid #b1b340;
+
   }

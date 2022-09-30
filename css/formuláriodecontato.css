@@ -16,14 +16,16 @@ body {
     
 }
 
+/*.........Menu........Menu...............*/
+
 .navigation {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 18px 40px;
-    box-shadow: 0 0.1rem 0.5rem hsl(283, 38%, 80%);
+    box-shadow: 0 0.1rem 0.5rem hsl(283, 100%, 84%);
     width: 100%;
-   background-color: rgb(89, 6, 96);
+    background-color:rgb(89, 6, 96);
     transition: all 0.5s;
     position: fixed;
 }
@@ -56,9 +58,10 @@ body {
 
 .formulario{
     display: flex;
-    align-items: center;
+    align-items:center;
     justify-content: center;
-    min-height: 110vh;
+    min-height: 100vh;
+    padding-top:2cm;
 }
 
 
@@ -140,7 +143,6 @@ form button:hover{
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background: #101026;
     flex-direction: column;
 }
 

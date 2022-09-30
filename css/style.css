@@ -23,7 +23,7 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 18px 40px;
-    box-shadow: 0 0.1rem 0.5rem hsl(283, 38%, 80%);
+    box-shadow:  0 0.1rem 0.5rem hsl(283, 100%, 84%);
     width: 100%;
     background-color: rgb(89, 6, 96);
     transition: all 0.5s;
@@ -47,48 +47,41 @@ body {
     color: rgb(143, 19, 143);
 }
 
-/*............Rodapé.......Rodapé.........*/
- 
-.menu {
-    cursor: pointer;
-    display: none;
+/*....logo.....*/
+
+#img{
+    width: 40px;
+    height: 40px;
 }
 
-.menu .bar {
-    display: block;
-    width: 30px;
-    height: 4px;
-    border-radius: 3px;
-    background: white;
-    margin: 5px auto;
+/*............Rodapé.......Rodapé.........*/
+ 
+.menu{
+    
+    margin: 10.5px auto;
     transition: all 0.3s;
 }
 
-.menu .bar:nth-child(1),
-.menu .bar:nth-child(3) {
-    background-color: blueviolet;
-}
-
-.menui {
-    top: 589px;
+.rodape {
+    top: 590px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 25px 40px;
-    box-shadow: 0 0.1rem 0.5rem hsl(283, 38%, 80%);
+    padding: 10px 40px;
+    box-shadow: 0 0.1rem 0.5rem hsl(283, 100%, 82%);
     width: 100%;
     background-color:transparent;
     transition: all 0.5s;
     position: relative;
 }
 
-.menui ul {
+.rodape ul {
     display: flex;
     align-items: center;
     gap: 10rem;
 }
 
-.menui ul li a {
+.rodape ul li a {
     color: rgb(255, 252, 247);
     font-size: 16px;
     font-weight: 500;
@@ -101,40 +94,23 @@ body {
 
 /*...................Seja bem vindo..................*/
 
-.home-img img {
-    width: 500px;
-    height: 405px;
-}
 
 .home {
-    width: 100%;
-    height: 70vh;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    
-}
-
-.home-text {
-    max-width: 100rem;
+    flex-direction: column;
+    position: relative;
+    padding: 5cm;
 
 }
 
-.home-text .text-h4 {
-    color: rgb(89, 6, 96);
-    margin-left: 420px;
-    margin-bottom: 900px;
+h1 {
+    color: rgb(89, 6, 96);  
     font-size: 3rem;
 }
 
-.home-text .text-h1 {
+h4 {
     color: rgb(3, 96, 21);
-    margin-top: -900px;
-    margin-left: 290px;
+    
     font-size: 1.5rem;
-}
-
-#img{
-    width: 90px;
-    height: 35px;
 }

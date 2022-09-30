@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/produtos.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/produtos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax//libs/font-awesome/4.5.0/css/font-awesome.min.css">
+    <script src="js/script.js"></script>
     <title>Açaí Bowl</title>
 </head>
 
@@ -21,95 +22,337 @@
                 <li><a href="nossaequipe.html">Nossa equipe</a></li>
                 <li><a href="formuláriodecontato.html">Formulário de Contato</a></li>
             </ul>
+            <!-- carrinho -->
+            <div class="car">
+                <a href="#modal" class="btn" onclick="mostrar()">&#128722;</a>
+            </div>
         </nav>
+
     </header>
 
-        <div class="container">
-            <div class="box">
-                <img src="imagem/img_açaícomfrutas.png">
-                <button>100ml R$ 8,00 </button>
-                <button>200ml R$ 10,00 </button>
-                <button>300ml R$ 12,00 </button>
-                <button>400ml R$ 14,00 </button>
-                <button>500ml R$ 16,00 </button>
-            </div>
+    <div id="modal" class="modal">
+        <div class="titulo_modal">
+          <h2>Carrinho</h2>
+          <a href="#" class="modal_link">&#128473;</a>
+        </div>
+        <div class="modal_carrinho">
+          <p>Subtotal</p>
+          <p class="modal_descricao" id="mostrar">R$0,00</p>
+          <div class="motal_botao">
+            <button type="button" id="botao1">Finalizar</button>
+            <button type="button" id="botao2" onclick="remover()">Limpar</button>
+          </div>
+        </div>
+
+<section id="açaí">
+    <div class="row">
+        <div class="col">
+            <img src="imagem/img_açaícomfrutas.png" alt="">
+            <p id="descp">Açaí no copo</p>
+            <p id="descrição">Pequeno 300ml</p>
+            <p id="preço">R$&emsp;7,00</p>
+            <button type="button" id="btn1" onclick="somaValor(7.00)"; alert('Item adicionado ao carrinho')>Adicionar ao carrinho</button>
+            <button type="button" id="btn2" onclick="diminuirValor(7.00)"; alert('Item retirado do carrinho')>Retirar do Carrinho</button>
+        </div>
+
+        <div class="col">
+            <img src="imagem/img_açaícomfrutas.png" alt="">
+            <p id="descp">Açaí no copo</p>
+            <p id="descrição">Médio 500ml</p>
+            <p id="preço">R$&emsp;10,00</p>
+            <button type="button" id="btn1" onclick="somaValor(10.00)"; alert('Item adicionado ao carrinho')>Adicionar ao carrinho</button>
+            <button type="button" id="btn2" onclick="diminuirValor(10.00)"; alert('Item retirado do carrinho')>Retirar do Carrinho</button>
+        </div>
+
+        <div class="col">
+            <img src="imagem/img_açaícomfrutas.png" alt="">
+            <p id="descp">Açaí no copo</p>
+            <p id="descrição">Grande 700ml</p>
+            <p id="preço">R$&emsp;13,00</p>
+            <button type="button" id="btn1" onclick="somaValor(13.00)"; alert('Item adicionado ao carrinho')>Adicionar ao carrinho</button>
+            <button type="button" id="btn2" onclick="diminuirValor(13.00)"; alert('Item retirado do carrinho')>Retirar do Carrinho</button>
+        </div>
+
+        <div class="col">
+            <img src="imagem/img_açaínabarca.png" alt="">
+            <p id="descp">Açaí na barca</p>
+            <p id="descrição">Pequena 600ml</p>
+            <p id="preço">R$&emsp;15,00</p>
+            <button type="button" id="btn1" onclick="somaValor(15.00)"; alert('Item adicionado ao carrinho')>Adicionar ao carrinho</button>
+            <button type="button" id="btn2" onclick="diminuirValor(15.00)"; alert('Item retirado do carrinho')>Retirar do Carrinho</button>
+        </div>
+
+        <div class="col">
+            <img src="imagem/img_açaínabarca.png" alt="">
+            <p id="descp">Açaí na barca</p>
+            <p id="descrição">Média 800ml</p>
+            <p id="preço">R$&emsp;20,00</p>
+            <button type="button" id="btn1" onclick="somaValor(20.00)"; alert('Item adicionado ao carrinho')>Adicionar ao carrinho</button>
+            <button type="button" id="btn2" onclick="diminuirValor(20.00)"; alert('Item retirado do carrinho')>Retirar do Carrinho</button>
+        </div>
+
+        <div class="col">
+            <img src="imagem/img_açaínabarca.png" alt="">
+            <p id="descp">Açaí na barca</p>
+            <p id="descrição">Grande 1litro</p>
+            <p id="preço">R$&emsp;25,00</p>
+            <button type="button" id="btn1" onclick="somaValor(25.00)"; alert('Item adicionado ao carrinho')>Adicionar ao carrinho</button>
+            <button type="button" id="btn2" onclick="diminuirValor(25.00)"; alert('Item retirado do carrinho')>Retirar do Carrinho</button>
+        </div>
+
+        <div class="col">
+            <img src="imagem/img_vitaminaaçaí.png" alt="">
+            <p id="descp">Vitamina de açaí</p>
+            <p id="descrição">Pequena 300ml</p>
+            <p id="preço">R$&emsp;7,00</p>
+            <button type="button" id="btn1" onclick="somaValor(7.00)"; alert('Item adicionado ao carrinho')>Adicionar ao carrinho</button>
+            <button type="button" id="btn2" onclick="diminuirValor(7.00)"; alert('Item retirado do carrinho')>Retirar do Carrinho</button>
+        </div>
+
+        <div class="col">
+            <img src="imagem/img_vitaminaaçaí.png" alt="">
+            <p id="descp">Vitamina de açaí</p>
+            <p id="descrição">Média 500ml</p>
+            <p id="preço">R$&emsp;10,00</p>
+            <button type="button" id="btn1" onclick="somaValor(10.00)"; alert('Item adicionado ao carrinho')>Adicionar ao carrinho</button>
+            <button type="button" id="btn2" onclick="diminuirValor(10.00)"; alert('Item retirado do carrinho')>Retirar do Carrinho</button>
+        </div>
+
+        <div class="col">
+            <img src="imagem/img_vitaminaaçaí.png" alt="">
+            <p id="descp">Vitamina de açaí</p>
+            <p id="descrição">Grande 700ml</p>
+            <p id="preço">R$&emsp;13,00</p>
+            <button type="button" id="btn1" onclick="somaValor(13.00)"; alert('Item adicionado ao carrinho')>Adicionar ao carrinho</button>
+            <button type="button" id="btn2" onclick="diminuirValor(13.00)"; alert('Item retirado do carrinho')>Retirar do Carrinho</button>
+        </div>
+
+        <div class="col">
+            <img src="imagem/img_açaíbowl.png" alt="">
+            <p id="descp">Açaí no bowl</p>
+            <p id="descrição">Pequeno 600ml</p>
+            <p id="preço">R$&emsp;18,00</p>
+            <button type="button" id="btn1" onclick="somaValor(18.00)"; alert('Item adicionado ao carrinho')>Adicionar ao carrinho</button>
+            <button type="button" id="btn2" onclick="diminuirValor(18.00)"; alert('Item retirado do carrinho')>Retirar do Carrinho</button>
+        </div>
+
+        <div class="col">
+            <img src="imagem/img_açaíbowl.png" alt="">
+            <p id="descp">Açaí no bowl</p>
+            <p id="descrição">Médio 600ml</p>
+            <p id="preço">R$&emsp;21,00</p>
+            <button type="button" id="btn1" onclick="somaValor(21.00)"; alert('Item adicionado ao carrinho')>Adicionar ao carrinho</button>
+            <button type="button" id="btn2" onclick="diminuirValor(21.00)"; alert('Item retirado do carrinho')>Retirar do Carrinho</button>
+        </div>
+
+        <div class="col">
+            <img src="imagem/img_açaíbowl.png" alt="">
+            <p id="descp">Açaí no bowl</p>
+            <p id="descrição">Grande 600ml</p>
+            <p id="preço">R$&emsp;24,00</p>
+            <button type="button" id="btn1" onclick="somaValor(24.00)"; alert('Item adicionado ao carrinho')>Adicionar ao carrinho</button>
+            <button type="button" id="btn2" onclick="diminuirValor(24.00)"; alert('Item retirado do carrinho')>Retirar do Carrinho</button>
+        </div>
+
+        <div class="col">
+            <img src="imagem/leite em pó.jpg" alt="">
+            <p id="descp">Complemento é sempre bom!</p>
+            <p id="descrição">Leite em pó</p>
+            <p id="preço">R$&emsp;0,20</p>
+            <button type="button" id="btn1" onclick="somaValor(0.20)"; alert('Item adicionado ao carrinho')>Adicionar ao carrinho</button>
+            <button type="button" id="btn2" onclick="diminuirValor(0.20)"; alert('Item retirado do carrinho')>Retirar do Carrinho</button>
+        </div>
+
+        <div class="col">
+            <img src="imagem/amendoim.jpg" alt="">
+            <p id="descp">Complemento é sempre bom!</p>
+            <p id="descrição">Amendoim</p>
+            <p id="preço">R$&emsp;0,20</p>
+            <button type="button" id="btn1" onclick="somaValor(0.20)"; alert('Item adicionado ao carrinho')>Adicionar ao carrinho</button>
+            <button type="button" id="btn2" onclick="diminuirValor(0.20)"; alert('Item retirado do carrinho')>Retirar do Carrinho</button>
+        </div>
+
+        <div class="col">
+            <img src="imagem/kit kat.jpg" alt="">
+            <p id="descp">Complemento é sempre bom!</p>
+            <p id="descrição">Kit kat</p>
+            <p id="preço">R$&emsp;0,20</p>
+            <button type="button" id="btn1" onclick="somaValor(0.20)"; alert('Item adicionado ao carrinho')>Adicionar ao carrinho</button>
+            <button type="button" id="btn2" onclick="diminuirValor(0.20)"; alert('Item retirado do carrinho')>Retirar do Carrinho</button>
+        </div>
+
+        <div class="col">
+            <img src="imagem/Marshmallow.jpg" alt="">
+            <p id="descp">Complemento é sempre bom!</p>
+            <p id="descrição">Marshmallow</p>
+            <p id="preço">R$&emsp;0,20</p>
+            <button type="button" id="btn1" onclick="somaValor(0.20)"; alert('Item adicionado ao carrinho')>Adicionar ao carrinho</button>
+            <button type="button" id="btn2" onclick="diminuirValor(0.20)"; alert('Item retirado do carrinho')>Retirar do Carrinho</button>
+        </div>
+
+
+        <div class="col">
+            <img src="imagem/paçoca.jpg" alt="">
+            <p id="descp">Complemento é sempre bom!</p>
+            <p id="descrição">Paçoca</p>
+            <p id="preço">R$&emsp;0,20</p>
+            <button type="button" id="btn1" onclick="somaValor(0.20)"; alert('Item adicionado ao carrinho')>Adicionar ao carrinho</button>
+            <button type="button" id="btn2" onclick="diminuirValor(0.20)"; alert('Item retirado do carrinho')>Retirar do Carrinho</button>
+        </div>
+
+        <div class="col">
+            <img src="imagem/sucrilhos.jpg" alt="">
+            <p id="descp">Complemento é sempre bom!</p>
+            <p id="descrição">Sucrilhos</p>
+            <p id="preço">R$&emsp;0,20</p>
+            <button type="button" id="btn1" onclick="somaValor(0.20)"; alert('Item adicionado ao carrinho')>Adicionar ao carrinho</button>
+            <button type="button" id="btn2" onclick="diminuirValor(0.20)"; alert('Item retirado do carrinho')>Retirar do Carrinho</button>
+        </div>
+
+        <div class="col">
+            <img src="imagem/confete.jpg" alt="">
+            <p id="descp">Complemento é sempre bom!</p>
+            <p id="descrição">Confete</p>
+            <p id="preço">R$&emsp;0,20</p>
+            <button type="button" id="btn1" onclick="somaValor(0.20)"; alert('Item adicionado ao carrinho')>Adicionar ao carrinho</button>
+            <button type="button" id="btn2" onclick="diminuirValor(0.20)"; alert('Item retirado do carrinho')>Retirar do Carrinho</button>
+        </div>
+
+        <div class="col">
+            <img src="imagem/jujuba.jpg" alt="">
+            <p id="descp">Complemento é sempre bom!</p>
+            <p id="descrição">Jujuba</p>
+            <p id="preço">R$&emsp;0,20</p>
+            <button type="button" id="btn1" onclick="somaValor(0.20)"; alert('Item adicionado ao carrinho')>Adicionar ao carrinho</button>
+            <button type="button" id="btn2" onclick="diminuirValor(0.20)"; alert('Item retirado do carrinho')>Retirar do Carrinho</button>
+        </div>
+
+        <div class="col">
+            <img src="imagem/granulado.jpg" alt="">
+            <p id="descp">Complemento é sempre bom!</p>
+            <p id="descrição">Granulado</p>
+            <p id="preço">R$&emsp;0,20</p>
+            <button type="button" id="btn1" onclick="somaValor(0.20)"; alert('Item adicionado ao carrinho')>Adicionar ao carrinho</button>
+            <button type="button" id="btn2" onclick="diminuirValor(0.20)"; alert('Item retirado do carrinho')>Retirar do Carrinho</button>
+        </div>
+
+        <div class="col">
+            <img src="imagem/waffle.jpg" alt="">
+            <p id="descp">Complemento é sempre bom!</p>
+            <p id="descrição">Waffle</p>
+            <p id="preço">R$&emsp;0,20</p>
+            <button type="button" id="btn1" onclick="somaValor(0.20)"; alert('Item adicionado ao carrinho')>Adicionar ao carrinho</button>
+            <button type="button" id="btn2" onclick="diminuirValor(0.20)"; alert('Item retirado do carrinho')>Retirar do Carrinho</button>
+        </div>
+
+        <div class="col">
+            <img src="imagem/chocolate.png" alt="">
+            <p id="descp">Hum, vai uma calda aí?</p>
+            <p id="descrição">Chocolate</p>
+            <p id="preço">R$&emsp;0,20</p>
+            <button type="button" id="btn1" onclick="somaValor(0.20)"; alert('Item adicionado ao carrinho')>Adicionar ao carrinho</button>
+            <button type="button" id="btn2" onclick="diminuirValor(0.20)"; alert('Item retirado do carrinho')>Retirar do Carrinho</button>
+        </div>
+
+        <div class="col">
+            <img src="imagem/morango.png" alt="">
+            <p id="descp">Hum, vai uma calda aí?</p>
+            <p id="descrição">Morango</p>
+            <p id="preço">R$&emsp;0,20</p>
+            <button type="button" id="btn1" onclick="somaValor(0.20)"; alert('Item adicionado ao carrinho')>Adicionar ao carrinho</button>
+            <button type="button" id="btn2" onclick="diminuirValor(0.20)"; alert('Item retirado do carrinho')>Retirar do Carrinho</button>
+        </div>
+
+        <div class="col">
+            <img src="imagem/leite condensado.jpg" alt="">
+            <p id="descp">Hum, vai uma calda aí?</p>
+            <p id="descrição">Leite condensado</p>
+            <p id="preço">R$&emsp;0,20</p>
+            <button type="button" id="btn1" onclick="somaValor(0.20)"; alert('Item adicionado ao carrinho')>Adicionar ao carrinho</button>
+            <button type="button" id="btn2" onclick="diminuirValor(0.20)"; alert('Item retirado do carrinho')>Retirar do Carrinho</button>
+        </div>
+
+        <div class="col">
+            <img src="imagem/chiclete.webp" alt="">
+            <p id="descp">Hum, vai uma calda aí?</p>
+            <p id="descrição">Chiclete</p>
+            <p id="preço">R$&emsp;0,20</p>
+            <button type="button" id="btn1" onclick="somaValor(0.20)"; alert('Item adicionado ao carrinho')>Adicionar ao carrinho</button>
+            <button type="button" id="btn2" onclick="diminuirValor(0.20)"; alert('Item retirado do carrinho')>Retirar do Carrinho</button>
+        </div>
+
+        <div class="col">
+            <img src="imagem/menta.jpg" alt="">
+            <p id="descp">Hum, vai uma calda aí?</p>
+            <p id="descrição">Menta</p>
+            <p id="preço">R$&emsp;0,20</p>
+            <button type="button" id="btn1" onclick="somaValor(0.20)"; alert('Item adicionado ao carrinho')>Adicionar ao carrinho</button>
+            <button type="button" id="btn2" onclick="diminuirValor(0.20)"; alert('Item retirado do carrinho')>Retirar do Carrinho</button>
+        </div>
+
+        <div class="col">
+            <img src="imagem/morango.jpg" alt="">
+            <p id="descp">Não vai deixar sem fruta, né?</p>
+            <p id="descrição">Morango</p>
+            <p id="preço">R$&emsp;0,20</p>
+            <button type="button" id="btn1" onclick="somaValor(0.20)"; alert('Item adicionado ao carrinho')>Adicionar ao carrinho</button>
+            <button type="button" id="btn2" onclick="diminuirValor(0.20)"; alert('Item retirado do carrinho')>Retirar do Carrinho</button>
+        </div>
+
+        <div class="col">
+            <img src="imagem/banana.jpg" alt="">
+            <p id="descp">Não vai deixar sem fruta, né?</p>
+            <p id="descrição">Banana</p>
+            <p id="preço">R$&emsp;0,20</p>
+            <button type="button" id="btn1" onclick="somaValor(0.20)"; alert('Item adicionado ao carrinho')>Adicionar ao carrinho</button>
+            <button type="button" id="btn2" onclick="diminuirValor(0.20)"; alert('Item retirado do carrinho')>Retirar do Carrinho</button>
+        </div>
+
+        <div class="col">
+            <img src="imagem/abacaxi.jpg" alt="">
+            <p id="descp">Não vai deixar sem fruta, né?</p>
+            <p id="descrição">Abacaxi</p>
+            <p id="preço">R$&emsp;0,20</p>
+            <button type="button" id="btn1" onclick="somaValor(0.20)"; alert('Item adicionado ao carrinho')>Adicionar ao carrinho</button>
+            <button type="button" id="btn2" onclick="diminuirValor(0.20)"; alert('Item retirado do carrinho')>Retirar do Carrinho</button>
+        </div>
+
+        <div class="col">
+            <img src="imagem/kiwi.jpg" alt="">
+            <p id="descp">Não vai deixar sem fruta, né?</p>
+            <p id="descrição">Kiwi</p>
+            <p id="preço">R$&emsp;0,20</p>
+            <button type="button" id="btn1" onclick="somaValor(0.20)"; alert('Item adicionado ao carrinho')>Adicionar ao carrinho</button>
+            <button type="button" id="btn2" onclick="diminuirValor(0.20)"; alert('Item retirado do carrinho')>Retirar do Carrinho</button>
+        </div>
+
+        <div class="col">
+            <img src="imagem/manga.jpg" alt="">
+            <p id="descp">Não vai deixar sem fruta, né?</p>
+            <p id="descrição">Manga</p>
+            <p id="preço">R$&emsp;0,20</p>
+            <button type="button" id="btn1" onclick="somaValor(0.20)"; alert('Item adicionado ao carrinho')>Adicionar ao carrinho</button>
+            <button type="button" id="btn2" onclick="diminuirValor(0.20)"; alert('Item retirado do carrinho')>Retirar do Carrinho</button>
+        </div>
+
+        <div class="col">
+            <img src="imagem/uva.jpg" alt="">
+            <p id="descp">Não vai deixar sem fruta, né?</p>
+            <p id="descrição">Uva</p>
+            <p id="preço">R$&emsp;0,20</p>
+            <button type="button" id="btn1" onclick="somaValor(0.20)"; alert('Item adicionado ao carrinho')>Adicionar ao carrinho</button>
+            <button type="button" id="btn2" onclick="diminuirValor(0.20)"; alert('Item retirado do carrinho')>Retirar do Carrinho</button>
         </div>
         
-        <div class="container">
-            <div class="box">
-                <img src="imagem/img_açaínabarca.png">
-                <button>700ml R$ 20,00 </button>
-                <button>800ml R$ 25,00 </button>
-                <button>900ml R$ 12,00 </button>
-                <button>1litro R$ 35,00 </button>
-            </div>
-        </div>
 
-        <div class="container">
-            <div class="box">
-                <img src="imagem/img_vitaminaaçaí.png">
-                <button>100ml R$ 8,00 </button>
-                <button>200ml R$ 10,00 </button>
-                <button>300ml R$ 15,00 </button>
-                <button>400ml R$ 18,00 </button>
-                <button>500ml R$ 20,00 </button>
-            </div>
-        </div>
+    </div>
+</section>
 
-        <div class="container">
-            <div class="box">
-                <img src="imagem/img_açaíbowl.png">
-                <button>100ml R$ 8,00 </button>
-                <button>200ml R$ 10,00 </button>
-                <button>300ml R$ 12,00 </button>
-                <button>400ml R$ 14,00 </button>
-                <button>500ml R$ 16,00 </button>
-            </div>
-        </div>
-
-        <div class="container4">
-            <div class="box">
-                <button>Escolha até 6 Complementos!</button>
-                <button>Adicionais:</button>
-                <button>Leite em pó</button>
-                <button>Castanhas </button>
-                <button>Paçoca </button>
-                <button>Nutella</button>
-                <button>Granola</button>
-                <button>Sucrilhos</button>                
-            </div>
-            
-            <div class="container5">
-                <div class="box">
-                    <button>Coberturas:</button>
-                    <button>Chocolate</button>
-                    <button>Morango </button>
-                    <button>Morango </button>
-                    <button>Caramelo </button>
-                    <button>Leite condensado</button>
-                    <button>Menta</button>
-                    <button>Maracujá</button>
-                </div>
-               
-            </div>
-
-            <div class="container6">
-                <div class="box">
-                    <button>Frutas</button>
-                    <button>Morango</button>
-                    <button>Banana </button>
-                    <button>Manga </button>
-                    <button>Uva</button>
-                    <button>Kiwi</button>
-                </div>
-                
-            </div>
-        </div>
-        
+<!-- Fim cardápio -->
+       
         <a class="whatsapp-link" href="https://web.whatsapp.com/send?phone=21993865648" target="_blank">
             <i class="fa fa-whatsapp"></i>
         </a>
 
 </body>
-
 </html>
